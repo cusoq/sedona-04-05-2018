@@ -29,13 +29,13 @@
 
 .page-footer__copy {
   @media (min-width: $breakpoint-tablet) {
-  display: block;
-  margin: 45px 60px auto auto;
-  padding: auto 0;
+    display: block;
+    margin: 45px 60px auto auto;
+    padding: auto 0;
   }
 
   @media (min-width: $breakpoint-desktop) {
-  margin: 15px 48px auto auto;
+    margin: 15px 48px auto auto;
   }
 }
 
