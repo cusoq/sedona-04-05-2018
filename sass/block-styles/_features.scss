@@ -1,0 +1,102 @@
+.features {
+  display: block;
+  padding-top: 5px;
+}
+
+.features__list {
+  @include list-styles();
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: $breakpoint-tablet;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 1200px;
+  }
+}
+
+.features__item {
+  position: relative;
+  display: block;
+  background-color: $background-color--normal;
+  min-height: 168px;
+
+  &:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    background-color: $background-color--darken;
+    box-shadow: 0 165px 0 0 $background-color--darken;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 33.3%;
+    min-height: 256px;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(4)::before {
+      display: none;
+    }
+
+    &--pictured {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.features__text {
+  background-color: $background-color;
+  min-height: 191px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 33.3%;
+    min-height: 256px;
+  }
+
+  &--town {
+    padding-top: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 103%;
+    background-position: top;
+    min-height: 190px;
+
+    @media (min-width: $breakpoint-tablet) {
+      background-image: none;
+      padding: 0;
+    }
+  }
+}
+
+.features__number {
+  font-size: $font-size--small;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 2.9;
+
+  &--pictured {
+    color: $secondary-color;
+  }
+}
+
+
+.features__pic {
+  display: block;
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 100%;
+    height: 256px;
+  }
+}

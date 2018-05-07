@@ -1,0 +1,59 @@
+.social {
+  @include list-styles();
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  min-height: 75px;
+  margin: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: auto 0;
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 6px auto 0;
+    padding: 0;
+  }
+}
+
+.social__item {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  vertical-align: bottom;
+
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: auto 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  background-color: $background-color;
+
+  &:hover {
+    background-color: #669ebf;
+  }
+
+  &:active {
+    background-color: #5596be;
+  }
+}
+
+a .social__icon {
+  fill: #ffffff;
+}
+
+a:active .social__icon {
+  fill: #87b6d0;
+}

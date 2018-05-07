@@ -1,0 +1,16 @@
+.btn {
+  @include buttons();
+
+  &--contacts {
+    margin: 0 auto 45px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 458px;
+      margin: 0 auto 57px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      margin: 0 auto 65px;
+    }
+  }
+}

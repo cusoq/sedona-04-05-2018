@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="main-page">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <div class="page-wrapper">
+    <header class="page-header page-header--inner">
+      <nav class="main-nav">
+        <ul class="main-nav__list popup popup--nav popup--show">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+            <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+          </li>
+        </ul>
+        <p class="page-header__logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logotype" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип">
+            </picture>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
+        </p>
+        <p class="page-header__title page-header__title--inner"> Welcome to the Gorgeous Sedona! </p>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="page__photos">
+        <h1 class="leader leader--promoinner">
+          Фото и видео
+        </h1>
+        <p class="paragraph paragraph--promoinner">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+        <ul class="page__photo-list photo-list">
+          <li class="photo-list__item">
+            <figure class="photo-list__pic photo-list__pic--first">
+              <a class="fullsize-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <figcaption class="photo-list__name">
+                Неродные просторы
+              </figcaption>
+            </figure>
+            <span class="photo-list__author">
+              Автор фото: Борис
+            </span>
+            <p class="photo-list__rate-wrapper photo-list__rate-wrapper--first">
+              <a class="photo-list__like" href="#">Like</a>
+              <b class="photo-list__rate">
+                1350
+              </b>
+            </p>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo-list__pic">
+              <a class="fullsize-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="features__pic" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+                </picture>
+              </a>
+              <figcaption class="photo-list__name">
+                Местная растительность
+              </figcaption>
+            </figure>
+            <span class="photo-list__author">
+              Автор фото: Сергей
+            </span>
+            <p class="photo-list__rate-wrapper">
+              <a class="photo-list__like" href="#">Like</a>
+              <b class="photo-list__rate">
+                143
+              </b>
+            </p>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo-list__pic">
+              <a class="fullsize-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="features__pic" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+                </picture>
+              </a>
+              <figcaption class="photo-list__name">
+                Дорога на север
+              </figcaption>
+            </figure>
+            <span class="photo-list__author">
+              Автор фото: Петр
+            </span>
+            <p class="photo-list__rate-wrapper">
+              <a class="photo-list__like" href="#">Like</a>
+              <b class="photo-list__rate">
+                96
+              </b>
+            </p>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo-list__pic">
+              <a class="fullsize-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="features__pic" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+                </picture>
+              </a>
+              <figcaption class="photo-list__name">
+                Мост дьявола
+              </figcaption>
+            </figure>
+            <span class="photo-list__author">
+              Автор фото: Антон
+            </span>
+            <p class="photo-list__rate-wrapper">
+              <a class="photo-list__like" href="#">Like</a>
+              <b class="photo-list__rate">
+                254
+              </b>
+            </p>
+          </li>
+        </ul>
+        <b class="leader leader--video">
+          Все еще сомневаетесь?
+        </b>
+        <p class="paragraph paragraph--promovideo">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+        <div class="page__video video">
+          <div class="video__scale">
+            <div class="video__toggle" style="margin-left: 16%">
+            </div>
+          </div>
+          <button class="video__btn video__btn--play">
+            Play<svg class="video__btn-icon" width="16" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-replay"></use></svg>
+          </button>
+          <button class="video__btn video__btn--subtitles">
+            Subtitles<svg class="video__btn-icon" width="32" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-subtitles"></use></svg>
+          </button>
+          <button class="video__btn video__btn--fullscreen">
+            Fullscreen<svg class="video__btn-icon" width="20" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-fullscreen"></use></svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__invite" href="#">
+        #visitsedona
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            Twitter<svg class="social__icon" width="15" height="48" ><use xlink:href="img/sprite.svg#s-icon-twitter"></use></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            Facebook<svg class="social__icon" width="9" height="48"><use xlink:href="img/sprite.svg#s-icon-facebook"></use></svg>s-
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            Youtube<svg class="social__icon" width="20" height="48"><use xlink:href="img/sprite.svg#s-icon-youtube"></use></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copy">
+        <span class="page-footer__copy-text">Разработано</span>
+        <a class="page-footer__copy-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          Htmlacademy<svg class="page-footer__copy-logo" width="26.943" height="34.09" aria-labelledby="title"><use xlink:href="img/sprite.svg#s-logo-htmlacademy"></use><title id="title">htmlacademy</title></svg>
+        </a>
+      </p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+</body>
+
+</html>
