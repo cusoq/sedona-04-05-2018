@@ -199,7 +199,8 @@
   margin-top: 4px;
   background-image: url("../img/icon-like-mobile.svg");
   background-repeat: no-repeat;
-  text-indent: 9999px;
+  font-size: 0;
+  // text-indent: 9999px;
   vertical-align: bottom;
 
   @media (min-width: $breakpoint-tablet) {
