@@ -41,7 +41,8 @@
   font-size: 0;
   background-color: $background-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ebf;
   }
 

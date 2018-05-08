@@ -10,7 +10,8 @@
   background-color: $background-color--lighten;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $background-color--darken;
   }
 
@@ -177,7 +178,8 @@
       }
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       background-color: #e5e5e5;
     }
 
@@ -216,7 +218,8 @@
       background-color: $background-color--lighten;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       background-color: #e5e5e5;
     }
 

@@ -57,7 +57,8 @@
   font-size: 0;
 }
 
-a:hover .page-footer__copy-logo {
+a:hover .page-footer__copy-logo,
+a:focus .page-footer__copy-logo {
   fill: #7eb3d2;
 }
 
