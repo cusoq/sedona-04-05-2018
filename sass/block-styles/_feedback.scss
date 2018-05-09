@@ -20,8 +20,12 @@
   }
 
   &--impression {
-    margin-top: 9px;
+    margin-top: 6px;
     padding: 0 17px 47px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: 9px;
+    }
 
     @media (min-width: $breakpoint-desktop) {
       margin-left: 70px;
@@ -53,6 +57,7 @@
 
       @media (min-width: $breakpoint-desktop) {
         margin-left: 73px;
+        padding-right: 40px;
       }
     }
 
