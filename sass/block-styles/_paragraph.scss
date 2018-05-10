@@ -79,16 +79,24 @@
   }
 
   &--life {
-    margin: 15px 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 0 20px 0 70px;
     line-height: 1.5;
 
+    & .br {
+      display: none;
+    }
+
     @media (min-width: $breakpoint-tablet) {
-      padding: 5px 46px 0;
+      padding: 20px 45px 0;
+
+      & .br {
+        display: inline;
+      }
     }
 
     @media (min-width: $breakpoint-desktop) {
-      padding: 5px 55px 0;
+      padding: 20px 55px 0;
     }
   }
 

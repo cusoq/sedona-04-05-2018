@@ -68,6 +68,14 @@
     }
   }
 
+  &--bridge .br {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: inline;
+    }
+  }
+
   &--formtitle {
     position: relative;
     display: block;
