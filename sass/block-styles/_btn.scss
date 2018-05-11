@@ -2,7 +2,7 @@
   @include buttons();
 
   &--contacts {
-    margin: 0 auto 45px;
+    margin: 0 auto 50px;
 
     @media (min-width: $breakpoint-tablet) {
       width: 458px;

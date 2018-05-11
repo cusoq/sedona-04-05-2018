@@ -12,6 +12,14 @@
   }
 }
 
+.page-header--moved {
+  padding-top: 48px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 0;
+  }
+}
+
 .page-header__title {
   margin: 0;
   text-align: center;
@@ -65,6 +73,11 @@
   .page-header__logo {
     top: 0;
   }
+}
+
+.page-header__logo--moved {
+  top: 0;
+  opacity: 1;
 }
 
 .page-header__logotype {

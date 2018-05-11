@@ -101,13 +101,21 @@
   }
 
   &--contacts {
-    margin: 0 0 13px 0;
-    padding: 0 27px;
+    margin: 0 0 33px 0;
+    padding: 0 26px;
     line-height: 1.76;
+
+    & .br {
+      display: none;
+    }
 
     @media (min-width: $breakpoint-tablet) {
       padding: 25px 150px 10px;
       margin: 0 0 28px 0;
+
+      & .br {
+        display: inline;
+      }
     }
 
     @media (min-width: $breakpoint-desktop) {
