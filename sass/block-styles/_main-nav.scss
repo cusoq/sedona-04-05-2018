@@ -2,8 +2,8 @@
   margin: 0 auto;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: auto, cover;
-  background-position: bottom, center;
+  background-size: 104%, cover;
+  background-position: 45% 100%, center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-mobile@2x.jpg");
