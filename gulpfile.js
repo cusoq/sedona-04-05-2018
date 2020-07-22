@@ -125,6 +125,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "images",
+  "webp",
   "compressjs",
   "html",
   "minifyhtml"
