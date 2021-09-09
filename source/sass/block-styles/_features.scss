@@ -92,8 +92,9 @@
 
 .features__pic {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 260px;
+  object-fit: cover;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
